@@ -7,7 +7,7 @@ search.addEventListener('click', async() => {
     if( val === ""){
         alert("Please enter a word");
     }else {    
-        const url = "https://api.dictionaryapi.dev/api/v2/entries/en/${val}";
+        const url = ' https://api.dictionaryapi.dev/api/v2/entries/en/${val} ';
         let meaning = await fetch(url);
         meaning = await meaning.json();
          
