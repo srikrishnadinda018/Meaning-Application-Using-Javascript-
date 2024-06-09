@@ -24,15 +24,10 @@ body {
 }
 
 .header {
-    display:flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: -50%;
+   
     color: #892BE2;
-    font-size: 1.5 rem;
-    left:25%;
+    font-size: 50px;
+    
 }
 
 #input {
