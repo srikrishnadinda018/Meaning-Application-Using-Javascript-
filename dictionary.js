@@ -7,10 +7,10 @@ search.addEventListener('click', async() => {
     if( val === ""){
         alert("Please enter a word");
     }else {    
-        const url = ' https://api.dictionaryapi.dev/api/v2/entries/en/${val} ';
+        const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${val}`;
         let meaning = await fetch(url);
         meaning = await meaning.json();
-         
+        console.log("meaning",meaning[0]['meanings'][0]["definitions"][0]["definition"])  
         output.textContent = meaning[0]['meanings'][0]["definitions"][0]["definition"];       
     }
 });
